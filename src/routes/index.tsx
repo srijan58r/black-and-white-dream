@@ -297,7 +297,7 @@ function TheWall() {
           <Polaroid
             src={PHOTOS.eyes}
             alt="Close-up of her eyes"
-            caption="the eyes I describe to people who weren't there"
+            caption="the eyes I can't stop describing"
             tilt="-3deg"
           >
             <Eye className="absolute -left-3 top-6 h-7 w-7 animate-float-slow text-ink-soft/70" />
@@ -400,8 +400,11 @@ function Plainly() {
             feel important at the time. That&rsquo;s how you know they&rsquo;re
             the real ones.
           </p>
-          <div className="mt-12 flex items-center justify-between gap-6">
-            <Hand>— me, still behind the screen. not for long.</Hand>
+          <div className="mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
+            <Hand className="flex-1 text-xl sm:text-2xl">
+              — me, still behind the screen.
+              <span className="block">not for long.</span>
+            </Hand>
             <Heart className="h-7 w-7 shrink-0 animate-float text-ink" />
           </div>
         </div>
