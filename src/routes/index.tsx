@@ -14,11 +14,11 @@ import {
   Smiley,
   Sparkle,
 } from "@/components/Stickers";
-import cafeAsset from "@/assets/cafe.asset.json";
-import cardiganAsset from "@/assets/cardigan.asset.json";
-import eyesAsset from "@/assets/eyes.asset.json";
-import juiceAsset from "@/assets/juice.asset.json";
-import selfieAsset from "@/assets/selfie.asset.json";
+import cafePhoto from "@/assets/photos/cafe.jpg";
+import cardiganPhoto from "@/assets/photos/cardigan.jpg";
+import eyesPhoto from "@/assets/photos/eyes.jpg";
+import juicePhoto from "@/assets/photos/juice.jpg";
+import selfiePhoto from "@/assets/photos/selfie.jpg";
 import roses from "@/assets/roses.png";
 
 export const Route = createFileRoute("/")({
@@ -44,11 +44,11 @@ export const Route = createFileRoute("/")({
 });
 
 const PHOTOS = {
-  eyes: eyesAsset.url,
-  selfie: selfieAsset.url,
-  cardigan: cardiganAsset.url,
-  cafe: cafeAsset.url,
-  juice: juiceAsset.url,
+  eyes: eyesPhoto,
+  selfie: selfiePhoto,
+  cardigan: cardiganPhoto,
+  cafe: cafePhoto,
+  juice: juicePhoto,
 };
 
 function Index() {
