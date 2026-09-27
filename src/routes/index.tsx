@@ -82,7 +82,7 @@ function Polaroid({
 }) {
   return (
     <figure
-      className={`group relative bg-card p-2.5 pb-11 shadow-[var(--shadow-print)] transition-shadow duration-700 hover:shadow-[var(--shadow-lift)] ${className ?? ""}`}
+      className={`group relative bg-card p-2.5 pb-14 shadow-[var(--shadow-print)] transition-shadow duration-700 hover:shadow-[var(--shadow-lift)] ${className ?? ""}`}
       style={{ rotate: tilt }}
     >
       <img
@@ -91,7 +91,7 @@ function Polaroid({
         loading="lazy"
         className="photo-print aspect-[4/5] w-full object-cover"
       />
-      <figcaption className="absolute inset-x-3 bottom-2 font-hand text-xl leading-tight text-ink-soft">
+      <figcaption className="absolute inset-x-3 bottom-3 font-hand text-lg leading-tight text-ink-soft">
         {caption}
       </figcaption>
       {children}
