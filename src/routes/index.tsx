@@ -269,10 +269,9 @@ function ThreeThings() {
                       </h3>
                       <Sticker className="h-8 w-8 animate-float text-ink-soft/80" />
                     </div>
-                    <p
-                      className="mt-5 max-w-[46ch] text-[0.98rem] leading-[1.95] text-ink-soft"
-                      dangerouslySetInnerHTML={{ __html: thing.body }}
-                    />
+                    <p className="mt-5 max-w-[46ch] text-[0.98rem] leading-[1.95] text-ink-soft">
+                      {thing.body}
+                    </p>
                     <p className="mt-5 font-hand text-xl text-graphite">
                       {thing.note}
                     </p>
