@@ -49,6 +49,9 @@
   --color-graphite: var(--graphite);
   --color-mist: var(--mist);
   --color-line: var(--line);
+  --color-rose: var(--rose);
+  --color-rose-deep: var(--rose-deep);
+  --color-rose-mist: var(--rose-mist);
 
   --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
   --font-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
@@ -70,6 +73,11 @@
   --graphite: oklch(0.63 0.014 265);
   --mist: oklch(0.955 0.008 88);
   --line: oklch(0.895 0.01 88);
+
+  /* the single exception: pink roses, kept for the very end of the letter */
+  --rose: oklch(0.805 0.088 18);
+  --rose-deep: oklch(0.54 0.15 18);
+  --rose-mist: oklch(0.947 0.041 18);
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -104,6 +112,9 @@
   --graphite: oklch(0.6 0.014 265);
   --mist: oklch(0.22 0.012 265);
   --line: oklch(0.3 0.012 265);
+  --rose: oklch(0.63 0.1 18);
+  --rose-deep: oklch(0.79 0.09 18);
+  --rose-mist: oklch(0.26 0.03 18);
   color-scheme: dark;
 }
 
@@ -190,6 +201,22 @@
     background: color-mix(in oklab, var(--graphite) 16%, transparent);
     border-inline: 1px solid color-mix(in oklab, var(--graphite) 26%, transparent);
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
+  }
+}
+
+/* the soft pink wash behind the bouquet — put it on a `relative z-0` wrapper */
+@utility blush {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -3rem -2rem -3.5rem;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(
+      78% 62% at 50% 50%,
+      color-mix(in oklab, var(--rose) 60%, transparent),
+      transparent 78%
+    );
   }
 }
 
