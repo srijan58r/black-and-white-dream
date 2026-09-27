@@ -35,12 +35,6 @@ const PHOTOS = {
 function Index() {
   return (
     <div className="grain relative min-h-screen overflow-x-clip bg-paper text-ink">
-      {/* faint vertical fold, like a page that was kept in an envelope */}
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-y-0 left-1/2 z-0 hidden w-px -translate-x-1/2 bg-line/60 md:block"
-      />
-
       <Opening />
       <TheQuote />
       <HerName />
