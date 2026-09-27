@@ -433,6 +433,59 @@ function Plainly() {
   );
 }
 
+/* -------------------------------------------------------------- bouquet */
+
+function Bouquet() {
+  return (
+    <section className="relative z-10 px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-[34rem]">
+        <Reveal>
+          <Eyebrow>one last thing</Eyebrow>
+        </Reveal>
+
+        <Reveal delay={140}>
+          <div className="blush relative z-0 mt-12">
+            <div
+              className="tape relative bg-card px-6 pb-9 pt-8 shadow-[var(--shadow-print)] sm:px-10"
+              style={{ rotate: "-0.7deg" }}
+            >
+              <Sparkle className="absolute -right-4 -top-3 h-6 w-6 animate-float text-rose-deep/60" />
+              <Heart className="absolute -left-5 bottom-10 h-6 w-6 -rotate-12 animate-float-slow text-rose-deep/50" />
+              <img
+                src={roses}
+                alt="A hand-tied bouquet of pink roses wrapped in paper and tied with a ribbon"
+                loading="lazy"
+                width={912}
+                height={1104}
+                className="mx-auto h-auto w-full max-w-[21rem]"
+              />
+              <p className="mt-6 text-center font-hand text-[1.75rem] leading-snug text-rose-deep md:text-[2rem]">
+                something for you, cutie
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={220}>
+          <p className="mt-10 max-w-[44ch] text-[0.98rem] leading-[1.95] text-ink-soft">
+            Everything on this page is black and white because that&rsquo;s how
+            she likes the world. These are the exception. I don&rsquo;t know how
+            to send flowers yet, so I&rsquo;ve put the whole bouquet at the end
+            of the letter, where the part I can&rsquo;t say out loud would go.
+          </p>
+        </Reveal>
+
+        <Reveal delay={300}>
+          <p className="mt-7 font-hand text-xl text-rose-deep">
+            the only colour on this page &mdash; and the only rule I&rsquo;d
+            happily break.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 /* ------------------------------------------------------------------ end */
 
 function End() {
