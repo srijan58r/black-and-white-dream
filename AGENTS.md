@@ -15,7 +15,9 @@
 > `--font-display`/`--font-body`/`--font-hand`, `grain`/`photo-print`/`tape`
 > utilities, reveal motion). Components use only those semantic classes — never
 > a hardcoded colour or a one-off style — because the whole page is one
-> continuous monochrome letter and any stray colour breaks it.
+> continuous monochrome letter and any stray colour breaks it. The single
+> sanctioned exception is the rose family (`--rose`, `--rose-deep`,
+> `--rose-mist`), used only for the pink-rose bouquet at the end of the letter.
 >
 > Decorative marks are the hand-drawn SVGs in `src/components/Stickers.tsx`,
 > drawn in `currentColor`; add new doodles there rather than importing an icon
