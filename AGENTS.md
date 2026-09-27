@@ -22,4 +22,9 @@
 > Decorative marks are the hand-drawn SVGs in `src/components/Stickers.tsx`,
 > drawn in `currentColor`; add new doodles there rather than importing an icon
 > library, so the whole site keeps one hand-drawn vocabulary.
+>
+> Her photos are real image files under `src/assets/photos/`, imported directly
+> (`@/assets/photos/eyes.jpg`) — never `.asset.json` pointers, whose URLs only
+> resolve on Lovable's hosting and would leave empty frames in any cloned or
+> exported copy of this repo.
 <!-- SUBU:END -->
