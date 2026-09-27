@@ -19,8 +19,27 @@ import cardiganAsset from "@/assets/cardigan.asset.json";
 import eyesAsset from "@/assets/eyes.asset.json";
 import juiceAsset from "@/assets/juice.asset.json";
 import selfieAsset from "@/assets/selfie.asset.json";
+import roses from "@/assets/roses.png";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "23.08.26 — a letter for Subu" },
+      {
+        name: "description",
+        content:
+          "A small private page about Subekshya K.C.: the date that became a memory, the things about her worth remembering, and a bouquet of pink roses at the end.",
+      },
+      { property: "og:title", content: "23.08.26 — a letter for Subu" },
+      {
+        property: "og:description",
+        content:
+          "Two people, somewhere behind two screens, not knowing that a simple conversation would become something worth remembering.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: Index,
 });
 
@@ -42,6 +61,7 @@ function Index() {
       <TheWall />
       <WhatSheDoes />
       <Plainly />
+      <Bouquet />
       <End />
     </div>
   );
