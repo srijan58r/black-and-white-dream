@@ -446,11 +446,11 @@ function Bouquet() {
         <Reveal delay={140}>
           <div className="blush relative z-0 mt-12">
             <div
-              className="tape relative bg-card px-6 pb-9 pt-8 shadow-[var(--shadow-print)] sm:px-10"
+              className="tape relative bg-rose-mist px-6 pb-9 pt-8 shadow-[var(--shadow-print)] sm:px-10"
               style={{ rotate: "-0.7deg" }}
             >
               <Sparkle className="absolute -right-4 -top-3 h-6 w-6 animate-float text-rose-deep/60" />
-              <Heart className="absolute -left-5 bottom-10 h-6 w-6 -rotate-12 animate-float-slow text-rose-deep/50" />
+              <Heart className="absolute -left-7 bottom-8 h-6 w-6 -rotate-12 animate-float-slow text-rose-deep/50" />
               <img
                 src={roses}
                 alt="A hand-tied bouquet of pink roses wrapped in paper and tied with a ribbon"
